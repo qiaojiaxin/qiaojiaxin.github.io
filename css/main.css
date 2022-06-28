@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html,body{
+    height: 100%;
+}
+aside{
+    width: 300px;
+    height: 100%;
+    /*位置不会随着滚动条的拖动而变化 */
+    position: fixed;
+    background-color: #262a30;
+}
+nav{
+    height: 50px;
+    background-color: #b9e1b1;
+}
+#content{
+    height: 100%;
+    padding-left: 300px;
+    background-color: #f9f7ed;
+}
+nav #menu{
+    float: right;
+    padding-right: 20px;
+}
+nav ul li{
+    float: left;
+    padding: 10px;
+    list-style: none;
+}
+nav ul li a{
+    color: #555;
+    font-size: 12px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid;
+}
+aside input{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background-color:  #131417;
+    color: #f9f7ed;
+    font-size: 16px;
+    text-indent: 20px;
+    outline: none;
+}
+aside i.fa.fa-search {
+    position: absolute;
+    right: 10px;
+    color: #555;
+    font-size: 25px;
+    line-height: 50px;    
+}
+aside {
+    overflow-y: scroll;
+}
+aside #tree {
+    padding-top: 55px;
+}
+aside ul {
+    /* 上右下左 */
+    padding:0px 5px 5px 20px ;
+}
+aside ul li {
+    list-style: none;
+    line-height: 25px;
+}
+aside ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #999;
+}
+aside ul li a:hover {
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+aside #tree .active a,
+aside #tree .active a:hover {
+    color: #87daff;
+    border-bottom: 1px solid #87daff;
+}
+aside #tree i.fa {
+    padding-right: 5px;
+}
